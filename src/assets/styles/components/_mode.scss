@@ -1,0 +1,39 @@
+.mode {
+  max-width: 100px;
+  width: 100%;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__text {
+    display: inline-block;
+
+    transition: 1s all;
+    width: 0;
+    overflow: hidden;
+
+    color: white;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 600;
+
+    &--tr {
+      background-color: gray;
+    }
+
+    &--ga {
+      background-color: limegreen;
+    }
+
+    &--show {
+      width: 100%;
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+}

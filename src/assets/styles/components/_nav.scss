@@ -1,0 +1,55 @@
+.nav {
+    max-width: 450px;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+    position: absolute;
+    z-index: 2;
+
+    background-color: rgba(tomato, 0.8);
+
+    transition: 1s all;
+    transform: translateX(-100%);
+
+    &__list {
+        margin: auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__link {
+        display: inline-block;
+        width: 100%;
+
+        color: white;
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 25px;
+
+        &:hover,
+        &:active,
+        &:focus {
+            opacity: 0.8;
+        }
+        &--active {
+            text-decoration: underline;
+            color: blanchedalmond;
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.nav--show {
+    transform: translateX(0);
+}

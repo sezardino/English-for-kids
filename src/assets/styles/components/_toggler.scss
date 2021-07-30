@@ -1,0 +1,43 @@
+.toggler {
+  padding: 5px;
+  max-width: 45px;
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    height: 4px;
+    gap: 2px;
+  }
+
+  &__dot {
+    width: 20%;
+    background-color: lightsalmon;
+    transition: 1s all;
+  }
+
+  &__line {
+    width: 100%;
+    background-color: blanchedalmond;
+    transition: 1s all;
+  }
+}
+
+.toggler--active {
+  .toggler {
+    &__dot {
+      width: 200%;
+      background-color: blanchedalmond;
+    }
+
+    &__line {
+      background-color: lightsalmon;
+    }
+  }
+}
